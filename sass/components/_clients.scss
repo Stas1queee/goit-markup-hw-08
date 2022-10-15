@@ -1,0 +1,38 @@
+.clients {
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    color: $secondary-text-color;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  &__icon {
+    fill: $fill-color;
+    width: 106px;
+    height: 60px;
+  }
+}
+.clients__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $fill-color;
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+.clients__box:hover .clients__icon,
+.clients__box:focus .clients__icon {
+  fill: $accent-color;
+}
