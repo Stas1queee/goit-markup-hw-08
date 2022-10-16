@@ -1,33 +1,68 @@
 .hero {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
-  text-align: center;
-  color:$background-color-header;
-  background-color:$dark-background-color;
+  max-width: 480px;
+  min-height: 400px;
+  background-size: contain;
+  background-color: $dark-background-color;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/img-hero.jpg');
+    url('../images/header/header-mob-img@1x.jpg');
+  @include retina {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/header/header-mob-img@2x.jpg');
+  }
 
-    &__title {
-        width: 696px;
+  @include tablet {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/header/header-tab-img@1x.jpg');
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/header/header-tab-img@2x.jpg');
+    }
+  }
+
+  @include desktop {
+    max-width: 1600px;
+    padding: 200px 0;
+    text-align: center;
+    color: $background-color-header;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/header/header-desk-img@1x.jpg');
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/header/header-desk-img@2x.jpg');
+    }
+  }
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.hero__title {
+  width: 360px;
   margin: 0 auto;
-
+  color: $background-color-header;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-    }
-    &__btn {
-        border: none;
+
+  @include desktop {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+.hero__btn {
+  border: none;
   border-radius: 4px;
   padding: 10px 32px 10px 32px;
   margin-top: 30px;
 
-  color:$background-color-header;
-  background-color:$accent-color;
+  color: $background-color-header;
+  background-color: $accent-color;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -35,5 +70,4 @@
   font-family: inherit;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-    }
 }

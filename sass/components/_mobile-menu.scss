@@ -85,6 +85,9 @@ fill:$accent-color;
   &:focus {
     color: $accent-color;
   }
+  &--current {
+    color: $accent-color;
+  }
 }
 .mobile {
   margin-bottom: 64px;
@@ -112,5 +115,4 @@ margin-bottom: 32px;
 .mobile-social__item:not(:first-child) {
   padding-left: 10px;
   border-left: 1px solid rgba(33, 33, 33, 0.2);
-  
 }
