@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -44,9 +44,60 @@
             >
           </li>
         </ul>
+        <button type="button" class="js-open-menu page-header__button-menu">
+          <svg
+            width="40px"
+            height="40px"
+            aria-label="Перемикач мобільного меню"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <use href="./images/icons.svg#icon-menu" class="button-menu__icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="main">
+          <div class="menu-container js-menu-container">
+          <button class="button-close js-close-menu" type="button">
+            <svg width="40px" height="40px" class="button-menu__icon-close">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu">
+            <li>
+              <a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Студія</a>
+            </li>
+            <li><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
+            <li><a href="" class="mobile-menu__link">Контакти</a></li>
+          </ul>
+       <ul class="mobile">
+            <li class="mobile__item--blue">
+              <a class="mobile__contacts mobile__contacts--blue" href="tel:+380961111111"
+                >+38 096 111 11 11
+              </a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__contacts" href="mailto:@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-social">
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       <section class="hero">
         <div class="container">
           <!-- секція-герой -->
@@ -462,28 +513,48 @@
           <strong class="footer__title">приєднуйтесь</strong>
           <ul class="oursocials">
             <li>
-              <a class="oursocials__link" href="./index.html" target="_blank" rel="noopener noreferrer">
+              <a
+                class="oursocials__link"
+                href="./index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="oursocials__icon">
                   <use href="./images/icons.svg#icon-Ellipse-3"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="oursocials__link" href="./index.html" target="_blank" rel="noopener noreferrer">
+              <a
+                class="oursocials__link"
+                href="./index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="oursocials__icon">
                   <use href="./images/icons.svg#icon-Ellipse-2"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="oursocials__link" href="./index.html" target="_blank" rel="noopener noreferrer">
+              <a
+                class="oursocials__link"
+                href="./index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="oursocials__icon">
                   <use href="./images/icons.svg#icon-Ellipse-1"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="oursocials__link" href="./index.html" target="_blank" rel="noopener noreferrer">
+              <a
+                class="oursocials__link"
+                href="./index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="oursocials__icon">
                   <use href="./images/icons.svg#icon-Ellipse"></use>
                 </svg>
@@ -506,5 +577,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
