@@ -1,3 +1,4 @@
+
 .whatwedo {
   padding-top: 0;
 &__card-title {
@@ -34,5 +35,11 @@
 &__photo {
   position: relative;
   width: 370px;
+}
+
+display: none;
+
+@include desktop {
+  display: block;
 }
 }
