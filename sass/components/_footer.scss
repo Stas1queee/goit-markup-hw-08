@@ -1,6 +1,7 @@
 .footer {
   padding: 60px 0px;
   background-color: $dark-background-color;
+
   &__logo {
     text-decoration: none;
     color: $background-color-header;
@@ -20,7 +21,14 @@
   }
   &__container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    text-align: center;
+
+    @include desktop {
+      align-items: center;
+      flex-direction: row;
+          align-items: center;
+    }
   }
 }
 .footer__logo--blue {
@@ -29,6 +37,7 @@
 .oursocials {
   display: flex;
   gap: 10px;
+  justify-content: center;
   margin-top: 20px;
   &__icon {
     width: 44px;
@@ -37,7 +46,13 @@
   }
 }
 .thumb {
-  margin-left: 70px;
+  margin-top: 60px;
+  @include desktop {
+    margin-left: 70px;
+  }
+  @include tablet {
+margin-top: 0;
+  }
 }
 .oursocials__link {
   display: block;
@@ -84,5 +99,11 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+}
+.tablet {
+  @include tablet {
+    justify-content: space-around;
+    display: flex;
   }
 }

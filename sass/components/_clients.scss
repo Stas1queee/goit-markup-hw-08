@@ -11,7 +11,14 @@
   &__list {
     display: flex;
     gap: 30px;
+    flex-basis: calc((100% - 15px) / 2);
+    flex-wrap: wrap;
     justify-content: center;
+
+    // @include tablet {
+    //   flex-basis: calc((100% - 15px) / 3);
+    // flex-wrap: wrap;
+    // }
   }
   &__icon {
     fill: $fill-color;
@@ -23,13 +30,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid $fill-color;
   border-radius: 4px;
   &:hover,
   &:focus {
     border-color: $accent-color;
+  }
+
+  @include tablet {
+    width:226px;
+  }
+  @include desktop {
+    width: 170px;
   }
 }
 .clients__box:hover .clients__icon,

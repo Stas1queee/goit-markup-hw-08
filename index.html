@@ -236,7 +236,19 @@
         <div class="container team">
           <ul class="team__list">
             <li class="team__mate">
-              <img class="team__image" src="./images/Team/1.jpg" alt="photo 1" width="270" />
+              <img
+                class="team__image"
+                srcset="
+                  ./images/Team/desktop/img-desktop-1@2x.jpg 270w,
+                  ./images/Team/desktop/1.jpg                270w,
+                  ./images/Team/tablet/tablet-img-1@1x.jpg   354w,
+                  ./images/Team/tablet/tablet-img-1@2x.jpg   354w,
+                  ./images/Team/mobile/img-mobile-1@1x.jpg   470w,
+                  ./images/Team/mobile/img-mobile-1@2x.jpg   470w
+                "
+                src="./images/Team/desktop/1.jpg"
+                alt="photo Ihor"
+              />
               <h3 class="team__title">Ігор Дем'яненко</h3>
               <p class="team__text">Product Designer</p>
               <ul class="socials">
@@ -286,7 +298,19 @@
               </ul>
             </li>
             <li class="team__mate">
-              <img class="team__image" src="./images/Team/2.jpg" alt="photo2" width="270" />
+              <img
+                class="team__image"
+                srcset="
+                  ./images/Team/desktop/img-desktop-2@2x.jpg 270w,
+                  ./images/Team/desktop/2.jpg                270w,
+                  ./images/Team/tablet/tablet-img-2@1x.jpg   354w,
+                  ./images/Team/tablet/tablet-img-2@2x.jpg   354w,
+                  ./images/Team/mobile/img-mobile-2@1x.jpg   470w,
+                  ./images/Team/mobile/img-mobile-2@2x.jpg   470w
+                "
+                src="./images/Team/2.jpg"
+                alt="photo Olha"
+              />
               <h3 class="team__title">Ольга Рєпіна</h3>
               <p class="team__text">Frontend Developer</p>
               <ul class="socials">
@@ -336,7 +360,19 @@
               </ul>
             </li>
             <li class="team__mate">
-              <img class="team__image" src="./images/Team/3.jpg" alt="photo3" width="270" />
+              <img
+                class="team__image"
+                srcset="
+                  ./images/Team/desktop/img-desktop-3@2x.jpg 270w,
+                  ./images/Team/desktop/3.jpg                270w,
+                  ./images/Team/tablet/tablet-img-3@1x.jpg   354w,
+                  ./images/Team/tablet/tablet-img-3@2x.jpg   354w,
+                  ./images/Team/mobile/img-mobile-3@1x.jpg   470w,
+                  ./images/Team/mobile/img-mobile-3@2x.jpg   470w
+                "
+                src="./images/Team/3.jpg"
+                alt="photo Mykola"
+              />
               <h3 class="team__title">Микола Тарасов</h3>
               <p class="team__text">Marketing</p>
               <ul class="socials">
@@ -386,7 +422,19 @@
               </ul>
             </li>
             <li class="team__mate">
-              <img class="team__image" src="./images/Team/4.jpg" alt="photo4" width="270" />
+              <img
+                class="team__image"
+                srcset="
+                  ./images/Team/desktop/img-desktop-4@2x.jpg 270w,
+                  ./images/Team/desktop/4.jpg                270w,
+                  ./images/Team/tablet/tablet-img-4@1x.jpg   354w,
+                  ./images/Team/tablet/tablet-img-4@2x.jpg   354w,
+                  ./images/Team/mobile/img-mobile-4@1x.jpg   470w,
+                  ./images/Team/mobile/img-mobile-4@2x.jpg   470w
+                "
+                src="./images/Team/4.jpg"
+                alt="photo Mykhailo"
+              />
               <h3 class="team__title">Михайло Єрмаков</h3>
               <p class="team__text">UI Designer</p>
 
@@ -482,87 +530,90 @@
     <footer class="footer">
       <!-- Підвал -->
       <div class="container footer__container">
-        <div>
-          <a href="./index.html" class="footer__logo"
-            ><span class="footer__logo--blue">Web</span>Studio</a
-          >
-          <address>
-            <ul class="contacts">
-              <li class="contacts__item">
+        <div class="tablet">
+          <div>
+            <a href="./index.html" class="footer__logo"
+              ><span class="footer__logo--blue">Web</span>Studio</a
+            >
+            <address>
+              <ul class="contacts">
+                <li class="contacts__item">
+                  <a
+                    href="https://goo.gl/maps/DitQ5L7CLAvDK1iu7"
+                    target="_blank"
+                    class="contacts__link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a href="mailto:info@devstudio.com" class="contacts__link--to"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a href="tel:+380961111111" class="contacts__link--to">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="thumb">
+            <strong class="footer__title">приєднуйтесь</strong>
+            <ul class="oursocials">
+              <li>
                 <a
-                  href="https://goo.gl/maps/DitQ5L7CLAvDK1iu7"
+                  class="oursocials__link"
+                  href="./index.html"
                   target="_blank"
-                  class="contacts__link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
+                  rel="noopener noreferrer"
                 >
+                  <svg class="oursocials__icon">
+                    <use href="./images/icons.svg#icon-Ellipse-3"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts__item">
-                <a href="mailto:info@devstudio.com" class="contacts__link--to"
-                  >info@devstudio.com</a
+              <li>
+                <a
+                  class="oursocials__link"
+                  href="./index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="oursocials__icon">
+                    <use href="./images/icons.svg#icon-Ellipse-2"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts__item">
-                <a href="tel:+380961111111" class="contacts__link--to">+38 096 111 11 11</a>
+              <li>
+                <a
+                  class="oursocials__link"
+                  href="./index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="oursocials__icon">
+                    <use href="./images/icons.svg#icon-Ellipse-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="oursocials__link"
+                  href="./index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="oursocials__icon">
+                    <use href="./images/icons.svg#icon-Ellipse"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="thumb">
-          <strong class="footer__title">приєднуйтесь</strong>
-          <ul class="oursocials">
-            <li>
-              <a
-                class="oursocials__link"
-                href="./index.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="oursocials__icon">
-                  <use href="./images/icons.svg#icon-Ellipse-3"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="oursocials__link"
-                href="./index.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="oursocials__icon">
-                  <use href="./images/icons.svg#icon-Ellipse-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="oursocials__link"
-                href="./index.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="oursocials__icon">
-                  <use href="./images/icons.svg#icon-Ellipse-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="oursocials__link"
-                href="./index.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="oursocials__icon">
-                  <use href="./images/icons.svg#icon-Ellipse"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="subscration">
           <b class="subscration__title">Підпишіться на розсилку</b>
-          <form action="#" name="subscration">
+          <form class="subscration__form" action="#" name="subscration">
             <input type="email" class="subscration__input" placeholder="E-mail" />
             <button type="submit" class="subscration__btn">
               Підписатися

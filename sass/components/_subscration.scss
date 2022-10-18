@@ -1,46 +1,76 @@
 .subscration {
+  margin-top: 60px;
   display: block;
-  margin-left: auto;
-  width: 570px;
-  height: 86px;
-&__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color:$background-color-header;
+  @include tablet{
+width: 450px;
+margin: 0 auto;
+margin-top: 60px;
+  }
+  @include desktop{
+margin-top: 0;
+margin-left: auto;
+  }
+  &__form {
+    display: inline-block;
+    width: 456px;
+    @include tablet{
+      display: block;
+
+    }
+    @include desktop {
+      margin-right: 0;
+      display: flex;
+      align-items: baseline;
+         width: 570px;
+         height: 86px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $background-color-header;
+  }
+  &__input {
+    margin-top: 20px;
+    width: 450px;
+    height: 50px;
+    color: $primary-text-color;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding-left: 16px;
+    outline: none;
+    @include desktop {
+      width: 358px;
+    }
+  }
+  &__btn {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1px;
+    border-radius: 4px;
+    border-color: $accent-color;
+    color: $background-color-header;
+    background-color:$accent-color;
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    @include desktop {
+      margin-top: 0;
+    }
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
 }
-&__input {
-  margin-top: 20px;
-  width: 358px;
-  height: 50px;
-  color:$primary-text-color;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  padding-left: 16px;
-  outline: none;
-}
-&__btn {
-  width: 200px;
-  height: 50px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 1px;
-  border-radius: 4px;
-  border-color:$accent-color;
-  color:$background-color-header;
-  background-color:$accent-color;
-  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-}
-&__icon {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-}}
