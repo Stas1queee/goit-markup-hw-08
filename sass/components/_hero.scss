@@ -1,9 +1,10 @@
 .hero {
   margin-left: auto;
   margin-right: auto;
+  min-width: 320px;
   max-width: 480px;
   min-height: 400px;
-  background-size: contain;
+  background-size: cover;
   background-color: $dark-background-color;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/header/header-mob-img@1x.jpg');
@@ -13,8 +14,7 @@
   }
 
   @include tablet {
-      max-width: 1600px;
-    background-size: cover;
+      max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/header/header-tab-img@1x.jpg');
     @include retina {
@@ -24,7 +24,6 @@
   }
 
   @include desktop {
-    background-size: cover;
     max-width: 1600px;
     padding: 200px 0;
     text-align: center;

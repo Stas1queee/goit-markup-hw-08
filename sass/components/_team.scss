@@ -14,7 +14,7 @@
   &__mate {
     background-color: $background-color-header;
     text-align: center;
-    width: 450px;
+    max-width: 450px;
 
     @include tablet {
       width: 354px;

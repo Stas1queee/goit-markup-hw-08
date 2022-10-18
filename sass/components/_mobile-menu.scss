@@ -45,7 +45,7 @@ fill:$accent-color;
   padding-top: 48px;
   padding-left: 40px;
   background-color: $background-color-header;
-  transform: translateX(100%);
+  transform: translateX(1000%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-container.is-open {

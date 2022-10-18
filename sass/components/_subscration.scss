@@ -1,6 +1,7 @@
 .subscration {
   margin-top: 60px;
   display: block;
+  max-width: 450px;
   @include tablet{
 width: 450px;
 margin: 0 auto;
@@ -9,10 +10,11 @@ margin-top: 60px;
   @include desktop{
 margin-top: 0;
 margin-left: auto;
+align-items: center;
   }
   &__form {
     display: inline-block;
-    width: 456px;
+    max-width: 456px;
     @include tablet{
       display: block;
 
@@ -34,7 +36,8 @@ margin-left: auto;
   }
   &__input {
     margin-top: 20px;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 50px;
     color: $primary-text-color;
     background-color: transparent;

@@ -2,30 +2,33 @@
   gap: 30px;
   display: flex;
   flex-direction: column;
+  max-width: 480px;
+  min-width: 320px;
 
   @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 768px;
   }
 
   @include desktop {
     flex-direction: row;
     flex-wrap: nowrap;
+    max-width: 1200px;
   }
   &__box {
     background-color: $addinational-background-color;
-    width: 450px;
     height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
     @include tablet {
-      width: 354px;
+      min-width: 354px;
     }
 
     @include desktop {
-      width: 270px;
+      min-width: 270px;
     }
   }
   &__icon {
@@ -51,5 +54,5 @@
   }
 }
 .mainlist li {
-flex-basis: calc((100% - 30px) / 2);
+  flex-basis: calc((100% - 30px) / 2);
 }
