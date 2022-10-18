@@ -987,6 +987,7 @@ li {
 
 .contacts {
   margin-top: 20px;
+  width: 231px;
 }
 
 .contacts__link,
@@ -1074,7 +1075,7 @@ li {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    width: 570px;
+    min-width: 570px;
     height: 86px;
   }
 }
@@ -1100,6 +1101,7 @@ li {
 @media screen and (min-width: 1200px) {
   .subscration__input {
     width: 358px;
+    margin-left: 93px;
   }
 }
 .subscration__btn {
@@ -1131,6 +1133,7 @@ li {
 @media screen and (min-width: 1200px) {
   .subscration__btn {
     margin-top: 0;
+    margin-left: 12px;
   }
 }
 .subscration__icon {

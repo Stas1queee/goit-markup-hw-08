@@ -2,29 +2,28 @@
   margin-top: 60px;
   display: block;
   max-width: 450px;
-  @include tablet{
-width: 450px;
-margin: 0 auto;
-margin-top: 60px;
+  @include tablet {
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 60px;
   }
-  @include desktop{
-margin-top: 0;
-margin-left: auto;
-align-items: center;
+  @include desktop {
+    margin-top: 0;
+    margin-left: auto;
+    align-items: center;
   }
   &__form {
     display: inline-block;
     max-width: 456px;
-    @include tablet{
+    @include tablet {
       display: block;
-
     }
     @include desktop {
       margin-right: 0;
       display: flex;
       align-items: baseline;
-         width: 570px;
-         height: 86px;
+      min-width: 570px;
+      height: 86px;
     }
   }
   &__title {
@@ -47,6 +46,7 @@ align-items: center;
     outline: none;
     @include desktop {
       width: 358px;
+      margin-left: 93px;
     }
   }
   &__btn {
@@ -60,7 +60,7 @@ align-items: center;
     border-radius: 4px;
     border-color: $accent-color;
     color: $background-color-header;
-    background-color:$accent-color;
+    background-color: $accent-color;
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
     font-weight: 700;
@@ -69,6 +69,7 @@ align-items: center;
     letter-spacing: 0.06em;
     @include desktop {
       margin-top: 0;
+      margin-left: 12px;
     }
   }
   &__icon {
