@@ -42,12 +42,13 @@
 
     color: $secondary-text-color;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
     @include desktop {
         text-align:start;
+        
     }
       @include tablet {
         text-align:start;

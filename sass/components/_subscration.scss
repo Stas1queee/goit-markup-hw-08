@@ -12,6 +12,7 @@
     margin-left: auto;
     align-items: center;
     max-width: 570px;
+    text-align: start;
   }
   &__form {
     display: inline-block;
@@ -47,7 +48,6 @@
     outline: none;
     @include desktop {
       width: 358px;
-      margin-left: 93px;
     }
   }
   &__btn {
