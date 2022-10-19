@@ -986,12 +986,26 @@ li {
 }
 
 .contacts {
-  margin-top: 20px;
   width: 231px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: block;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: block;
+    text-align: start;
+  }
 }
 
 .contacts__link,
 .contacts__link--to {
+  margin-right: auto;
   color: #ffffff;
   text-decoration: none;
   font-style: normal;

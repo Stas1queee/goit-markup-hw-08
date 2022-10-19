@@ -65,11 +65,22 @@ margin-top: 0;
   }
 }
 .contacts {
-  margin-top: 20px;
   width: 231px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  @include desktop {
+   display: block;
+   text-align: start;
+  }
+  @include tablet {
+       display: block;
+   text-align: start;
+  }
 }
 .contacts__link,
 .contacts__link--to {
+  margin-right: auto;
   color: $background-color-header;
   text-decoration: none;
   font-style: normal;
