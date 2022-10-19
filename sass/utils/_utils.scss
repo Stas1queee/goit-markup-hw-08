@@ -31,6 +31,8 @@ li {
 }
 
 .container {
+  width: 100%;
+  min-width: 320px;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -39,9 +41,11 @@ li {
   overflow: hidden;
 
   @include tablet {
+    min-width: 767px;
     max-width: 768px;
   }
    @include desktop {
+    min-width: 1199px;
     max-width: 1200px;
   }
 }

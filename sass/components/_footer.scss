@@ -1,7 +1,14 @@
 .footer {
   padding: 60px 0px;
   background-color: $dark-background-color;
-
+  @include desktop {
+    align-items: baseline;
+  }
+  &__add {
+    @include desktop {
+      text-align: start;
+    }
+  }
   &__logo {
     text-decoration: none;
     color: $background-color-header;
@@ -25,9 +32,9 @@
     text-align: center;
 
     @include desktop {
-      align-items: center;
+      display: flex;
       flex-direction: row;
-          align-items: center;
+      align-items: baseline;
     }
   }
 }
@@ -49,9 +56,10 @@
   margin-top: 60px;
   @include desktop {
     margin-left: 70px;
+    align-items: baseline;
   }
   @include tablet {
-margin-top: 0;
+    margin-top: 0;
   }
 }
 .oursocials__link {
@@ -70,12 +78,11 @@ margin-top: 0;
   margin-top: 20px;
 
   @include desktop {
-   display: block;
-   text-align: start;
+    display: block;
+    text-align: start;
   }
   @include tablet {
-       display: block;
-   text-align: start;
+    display: block;
   }
 }
 .contacts__link,
@@ -117,6 +124,9 @@ margin-top: 0;
   @include tablet {
     justify-content: space-around;
     display: flex;
- 
+  }
+  @include desktop {
+    display: flex;
+    align-items: baseline;
   }
 }

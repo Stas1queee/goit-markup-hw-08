@@ -11,13 +11,15 @@
   &__list {
     display: flex;
     gap: 30px;
- 
     flex-wrap: wrap;
     justify-content: center;
+    @include desktop {
+      flex-wrap: nowrap;
+    }
   }
   &__icon {
     fill: $fill-color;
-    width: 106px;
+    max-width: 106px;
     height: 60px;
   }
 }
@@ -25,8 +27,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
-flex-basis: calc((100% - 15px) / 2);
   height: 92px;
   border: 1px solid $fill-color;
   border-radius: 4px;
@@ -34,15 +34,17 @@ flex-basis: calc((100% - 15px) / 2);
   &:focus {
     border-color: $accent-color;
   }
-
-  @include tablet {
+}
+.clients__box:hover .clients__icon,
+.clients__box:focus .clients__icon {
+  fill: $accent-color;
+}
+.clients__item {
+  width: calc((100% - 30px) / 2) ;
+    @include tablet {
     width:226px;
   }
   @include desktop {
     width: 170px;
   }
-}
-.clients__box:hover .clients__icon,
-.clients__box:focus .clients__icon {
-  fill: $accent-color;
 }
