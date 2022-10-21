@@ -9,9 +9,9 @@
   }
   @include desktop {
     margin-top: 0;
-    margin-left: auto;
+    margin-left: 93px;
     align-items: center;
-    max-width: 570px;
+    min-width: 570px;
     text-align: start;
   }
   &__form {

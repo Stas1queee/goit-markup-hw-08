@@ -23,7 +23,7 @@
   max-height: 342px;
 
   @include desktop {
-    width: 448px;
+    max-width: 448px;
   }
   &__title {
     text-align: left;
@@ -102,10 +102,11 @@
     margin-right: 8px;
   }
   @include desktop {
+    padding: 0px;
     font-size: 14px;
     line-height: 1.4;
     margin-left: 12px;
-    width: 425px;
+    max-width: 425px;
   }
 }
 .agree__checkbox {

@@ -38,14 +38,12 @@ li {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  overflow: hidden;
 
   @include tablet {
     min-width: 767px;
     max-width: 768px;
   }
-   @include desktop {
-    min-width: 1199px;
+  @include desktop {
     max-width: 1200px;
   }
 }
