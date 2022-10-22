@@ -1264,6 +1264,7 @@ li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  width: 1200px;
 }
 .portfolio__title {
   font-weight: 700;

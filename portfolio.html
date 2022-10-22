@@ -177,67 +177,90 @@
     <footer class="footer">
       <!-- Підвал -->
       <div class="container footer__container">
-        <div>
-          <a href="./index.html" class="footer__logo"
-            ><span class="footer__logo--blue">Web</span>Studio</a
-          >
-          <address>
-            <ul class="contacts">
-              <li class="contacts__item">
+        <div class="tablet">
+          <div class="footer__add">
+            <a href="./index.html" class="footer__logo"
+              ><span class="footer__logo--blue">Web</span>Studio</a
+            >
+            <address>
+              <ul class="contacts">
+                <li class="contacts__item">
+                  <a
+                    href="https://goo.gl/maps/DitQ5L7CLAvDK1iu7"
+                    target="_blank"
+                    class="contacts__link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a href="mailto:info@devstudio.com" class="contacts__link--to"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a href="tel:+380961111111" class="contacts__link--to">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="thumb">
+            <strong class="footer__title">приєднуйтесь</strong>
+            <ul class="oursocials">
+              <li>
                 <a
-                  href="https://goo.gl/maps/DitQ5L7CLAvDK1iu7"
+                  class="oursocials__link"
+                  href="./index.html"
                   target="_blank"
-                  class="contacts__link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
+                  rel="noopener noreferrer"
                 >
+                  <svg class="oursocials__icon">
+                    <use href="./images/icons.svg#icon-Ellipse-3"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts__item">
-                <a href="mailto:info@devstudio.com" class="contacts__link--to"
-                  >info@devstudio.com</a
+              <li>
+                <a
+                  class="oursocials__link"
+                  href="./index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="oursocials__icon">
+                    <use href="./images/icons.svg#icon-Ellipse-2"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts__item">
-                <a href="tel:+380961111111" class="contacts__link--to">+38 096 111 11 11</a>
+              <li>
+                <a
+                  class="oursocials__link"
+                  href="./index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="oursocials__icon">
+                    <use href="./images/icons.svg#icon-Ellipse-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="oursocials__link"
+                  href="./index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="oursocials__icon">
+                    <use href="./images/icons.svg#icon-Ellipse"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="thumb">
-          <strong class="footer__title">приєднуйтесь</strong>
-          <ul class="oursocials">
-            <li>
-              <a class="oursocials__link" href="./index.html" target="_blank" rel="noopener noreferrer">
-                <svg class="oursocials__icon">
-                  <use href="./images/icons.svg#icon-Ellipse-3"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="oursocials__link" href="./index.html" target="_blank" rel="noopener noreferrer">
-                <svg class="oursocials__icon">
-                  <use href="./images/icons.svg#icon-Ellipse-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="oursocials__link" href="./index.html" target="_blank" rel="noopener noreferrer">
-                <svg class="oursocials__icon">
-                  <use href="./images/icons.svg#icon-Ellipse-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="oursocials__link" href="./index.html" target="_blank" rel="noopener noreferrer">
-                <svg class="oursocials__icon">
-                  <use href="./images/icons.svg#icon-Ellipse"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="subscration">
           <b class="subscration__title">Підпишіться на розсилку</b>
-          <form action="#" name="subscration">
+          <form class="subscration__form" action="#" name="subscration">
             <input type="email" class="subscration__input" placeholder="E-mail" />
             <button type="submit" class="subscration__btn">
               Підписатися
